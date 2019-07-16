@@ -2,8 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.richard.summariesofdyhdm">
-
+    <!-- 网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取手机联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--组名访问SD卡的权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".sixth_database.litepal_store.LitepalStoreActivity"></activity>
+        <activity android:name=".eighth_multimedia.photo.CallPhototActivity"></activity>
+        <activity android:name=".eighth_multimedia.notification.ShowNotificationActivity" />
+        <activity android:name=".eighth_multimedia.notification.MyNotificationActivity" />
+        <activity android:name=".eighth_multimedia.MultimediaActivity" />
+        <activity android:name=".seventh_contentprovider.ReadPhoneContactsActivity" />
+        <activity android:name=".seventh_contentprovider.ContentProviderActivity" />
+        <activity android:name=".sixth_database.litepal_store.LitepalStoreActivity" />
         <activity android:name=".sixth_database.sql_store.SqlStoreActivity" />
         <activity android:name=".sixth_database.sp_store.SpStoreActivity" />
         <activity android:name=".sixth_database.file_store.FileStoreActivity" />
@@ -26,6 +38,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:authorities="com.richard.summariesofdyhdm.eighth_multimedia.photo.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDE_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
     </application>
 
 </manifest>

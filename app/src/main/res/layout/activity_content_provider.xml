@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".seventh_contentprovider.ContentProviderActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/打电话给10086"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_reade_phone_contacts"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/读取手机联系人"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+</LinearLayout>

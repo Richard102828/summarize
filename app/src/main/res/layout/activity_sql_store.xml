@@ -1,9 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".sixth_database.sql_store.SqlStoreActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/btn_create_table"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/创建数据库"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_add_data"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/添加数据"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_update_data"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/更新数据"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_delete_data"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/删除数据"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_query_data"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:text="@string/查询数据"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        style="?attr/borderlessButtonStyle" />
+
+</LinearLayout>

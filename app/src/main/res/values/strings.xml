@@ -9,4 +9,17 @@
     <string name="login">login</string>
     <string name="remember_password">remember_password</string>
     <string name="password">Password:</string>
+    <string name="创建数据库">创建数据库</string>
+    <string name="添加数据">添加数据</string>
+    <string name="更新数据">更新数据</string>
+    <string name="删除数据">删除数据</string>
+    <string name="查询数据">查询数据</string>
+    <string name="打电话给10086">打电话给10086</string>
+    <string name="读取手机联系人">读取手机联系人</string>
+    <string name="发送高级通知">发送高级通知</string>
+    <string name="调用相机和相册">调用相机和相册</string>
+    <string name="发送">发送</string>
+    <string name="高级通知就是刚才你点的那个东西">高级通知就是刚才你点的那个东西</string>
+    <string name="调用相机">调用相机</string>
+    <string name="从相册中选取照片">从相册中选取照片</string>
 </resources>

@@ -9,8 +9,10 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.richard.summariesofdyhdm.R;
+import com.richard.summariesofdyhdm.eighth_multimedia.MultimediaActivity;
 import com.richard.summariesofdyhdm.recyclerview.RecyclerViewActivity;
 import com.richard.summariesofdyhdm.sixth_database.TheSixthChapterActivity;
+import com.richard.summariesofdyhdm.seventh_contentprovider.ContentProviderActivity;
 
 /**
  * @author: Richard
@@ -69,13 +71,13 @@ public class DataAdapter extends BaseAdapter {
 
                     }else if (data[i].equals("ContentProvider")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, ContentProviderActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("Multimedia")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, MultimediaActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("Context")) {
 
