@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Summaries Of DYHDM</string>
+    <string name="文件存储">文件存储</string>
+    <string name="SP存储">SP存储</string>
+    <string name="SQLite存储">SQLite存储</string>
+    <string name="LitePal存储">LitePal存储</string>
+    <string name="type_something_here">Type something here</string>
+    <string name="account">account:</string>
+    <string name="login">login</string>
+    <string name="remember_password">remember_password</string>
+    <string name="password">Password:</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--被压时按钮的矩形圆角弧度、颜色-->
+
+    <corners android:radius="10dp"/>
+    <solid android:color="#25b6ed"/>
+
+</shape>
