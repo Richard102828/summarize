@@ -5,52 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".eighth_multimedia.MultimediaActivity">
+    tools:context=".tenth_service.MyActivity">
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="130dp" />
+        android:layout_height="100dp" />
 
     <Button
-        android:id="@+id/btn_notification"
+        android:id="@+id/btn_start_download"
+        style="?attr/borderlessButtonStyle"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:text="@string/发送高级通知"
         android:background="@drawable/btn_bg_rectangle_selector"
-        style="?attr/borderlessButtonStyle" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
-
-    <Button
-        android:id="@+id/btn_call_photo"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:text="@string/开始下载"
+        android:textAllCaps="false"
         android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:text="@string/调用相机和相册"
-        android:background="@drawable/btn_bg_rectangle_selector"
-        style="?attr/borderlessButtonStyle" />
+        android:textSize="25sp" />
+
 
     <View
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
     <Button
-        android:id="@+id/btn_play_music"
+        android:id="@+id/btn_paused_download"
+        style="?attr/borderlessButtonStyle"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:text="@string/播放音乐"
         android:background="@drawable/btn_bg_rectangle_selector"
-        style="?attr/borderlessButtonStyle" />
+        android:text="@string/暂停下载"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/btn_cancel_download"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg_rectangle_selector"
+        android:text="@string/停止下载"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
 
 
 </LinearLayout>

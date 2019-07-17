@@ -22,4 +22,18 @@
     <string name="高级通知就是刚才你点的那个东西">高级通知就是刚才你点的那个东西</string>
     <string name="调用相机">调用相机</string>
     <string name="从相册中选取照片">从相册中选取照片</string>
+    <string name="播放音乐">播放音乐</string>
+    <string name="暂停播放">暂停播放</string>
+    <string name="停止播放">停止播放</string>
+    <string name="WebView加载网页">WebView加载网页</string>
+    <string name="HttpURLconnection请求数据">HttpURLconnection请求数据</string>
+    <string name="OkHttp请求数据">OkHttp请求数据</string>
+    <string name="JsonObject解析数据">JsonObject解析数据</string>
+    <string name="Gson解析数据">Gson解析数据</string>
+    <string name="开始请求数据">开始请求数据</string>
+    <string name="请求并数据">请求并数据</string>
+    <string name="请求并解析数据">请求并解析数据</string>
+    <string name="开始下载">开始下载</string>
+    <string name="暂停下载">暂停下载</string>
+    <string name="停止下载">停止下载</string>
 </resources>

@@ -20,6 +20,10 @@ android {
 }
 
 dependencies {
+    //gson的依赖
+    //imlpementation 'com.google.code.gson:gson:2.8.5'
+    //OkHttp的依赖
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     //Glide的依赖
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'

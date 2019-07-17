@@ -2,14 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.richard.summariesofdyhdm">
+
     <!-- 网络权限 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 打电话的权限 -->
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <!-- 读取手机联系人的权限 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <!--组名访问SD卡的权限-->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 读取手机联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 组名访问SD卡的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
         android:allowBackup="true"
@@ -19,7 +19,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".eighth_multimedia.photo.CallPhototActivity"></activity>
+        <service
+            android:name=".tenth_service.DownloadService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".tenth_service.MyActivity" />
+        <activity android:name=".ninth_network.parsejsondata.GsonActivity" />
+        <activity android:name=".ninth_network.parsejsondata.JSONActivity" />
+        <activity android:name=".ninth_network.requsetdata.OkHttpActivity" />
+        <activity android:name=".ninth_network.WebViewActivity" />
+        <activity android:name=".ninth_network.requsetdata.HttpURLActivity" />
+        <activity android:name=".ninth_network.NetworkActivity" />
+        <activity android:name=".eighth_multimedia.PlayMusicActivity" />
+        <activity android:name=".eighth_multimedia.photo.CallPhototActivity" />
         <activity android:name=".eighth_multimedia.notification.ShowNotificationActivity" />
         <activity android:name=".eighth_multimedia.notification.MyNotificationActivity" />
         <activity android:name=".eighth_multimedia.MultimediaActivity" />
@@ -40,14 +53,14 @@
         </activity>
 
         <provider
-            android:authorities="com.richard.summariesofdyhdm.eighth_multimedia.photo.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.richard.summariesofdyhdm.eighth_multimedia.photo.fileprovider"
+            android:enabled="true"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
-                android:name="android.support.FILE_PROVIDE_PATHS"
+                android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
-
         </provider>
     </application>
 

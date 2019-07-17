@@ -10,9 +10,11 @@ import android.widget.TextView;
 
 import com.richard.summariesofdyhdm.R;
 import com.richard.summariesofdyhdm.eighth_multimedia.MultimediaActivity;
+import com.richard.summariesofdyhdm.ninth_network.NetworkActivity;
 import com.richard.summariesofdyhdm.recyclerview.RecyclerViewActivity;
 import com.richard.summariesofdyhdm.sixth_database.TheSixthChapterActivity;
 import com.richard.summariesofdyhdm.seventh_contentprovider.ContentProviderActivity;
+import com.richard.summariesofdyhdm.tenth_service.MyActivity;
 
 /**
  * @author: Richard
@@ -86,13 +88,13 @@ public class DataAdapter extends BaseAdapter {
 
                     }else if (data[i].equals("Network")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, NetworkActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("Service")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, MyActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("Location")) {
 

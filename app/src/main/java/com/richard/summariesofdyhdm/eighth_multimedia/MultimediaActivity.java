@@ -27,6 +27,8 @@ public class MultimediaActivity extends AppCompatActivity {
     Button btnNotification;
     @BindView(R.id.btn_call_photo)
     Button btnCallPhoto;
+    @BindView(R.id.btn_play_music)
+    Button btnPlayMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class MultimediaActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_notification, R.id.btn_call_photo})
+    @OnClick({R.id.btn_notification, R.id.btn_call_photo, R.id.btn_play_music})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_notification:
@@ -46,6 +48,9 @@ public class MultimediaActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(this, CallPhototActivity.class);
                 startActivity(intent1);
                 break;
+            case R.id.btn_play_music:
+                Intent intent2 = new Intent(this,PlayMusicActivity.class);
+                startActivity(intent2);
         }
     }
 }
