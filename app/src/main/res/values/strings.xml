@@ -36,4 +36,13 @@
     <string name="开始下载">开始下载</string>
     <string name="暂停下载">暂停下载</string>
     <string name="停止下载">停止下载</string>
+    <string name="tonygreendev_gmail_com">tonygreendev_gmail_com</string>
+    <string name="tony_green">tony_green</string>
+    <string name="backup">backup</string>
+    <string name="delete">delete</string>
+    <string name="setting">setting</string>
+    <string name="mail">mail</string>
+    <string name="location">location</string>
+    <string name="friends">friends</string>
+    <string name="call">call</string>
 </resources>

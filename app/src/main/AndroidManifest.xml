@@ -4,12 +4,30 @@
     package="com.richard.summariesofdyhdm">
 
     <!-- 网络权限 -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- 打电话的权限 -->
-    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 读取手机联系人的权限 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 组名访问SD卡的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取手机联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 组名访问SD卡的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!--百度定位相关权限-->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 
     <application
         android:allowBackup="true"
@@ -19,11 +37,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <!--百度SDK配置-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dfViO7BvGHrWieNsTUK0skUcgMbz7BeY"/>
+
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote"/>
+        <!--下载服务-->
         <service
             android:name=".tenth_service.DownloadService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
 
+        </service>
+        
+        <activity android:name=".twelfth_material_design.MaterialDesignActivity" />
+        <activity android:name=".eleventh_location.BDLocationActivity" />
         <activity android:name=".tenth_service.MyActivity" />
         <activity android:name=".ninth_network.parsejsondata.GsonActivity" />
         <activity android:name=".ninth_network.parsejsondata.JSONActivity" />

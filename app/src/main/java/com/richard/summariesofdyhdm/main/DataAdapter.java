@@ -10,11 +10,13 @@ import android.widget.TextView;
 
 import com.richard.summariesofdyhdm.R;
 import com.richard.summariesofdyhdm.eighth_multimedia.MultimediaActivity;
+import com.richard.summariesofdyhdm.eleventh_location.BDLocationActivity;
 import com.richard.summariesofdyhdm.ninth_network.NetworkActivity;
 import com.richard.summariesofdyhdm.recyclerview.RecyclerViewActivity;
 import com.richard.summariesofdyhdm.sixth_database.TheSixthChapterActivity;
 import com.richard.summariesofdyhdm.seventh_contentprovider.ContentProviderActivity;
 import com.richard.summariesofdyhdm.tenth_service.MyActivity;
+import com.richard.summariesofdyhdm.twelfth_material_design.MaterialDesignActivity;
 
 /**
  * @author: Richard
@@ -98,13 +100,13 @@ public class DataAdapter extends BaseAdapter {
 
                     }else if (data[i].equals("Location")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, BDLocationActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("MaterialDesign")) {
 
-//                        Intent intent = new Intent(MainActivity.this,);
-//                        context.startActivity(intent);
+                        Intent intent = new Intent(context, MaterialDesignActivity.class);
+                        context.startActivity(intent);
 
                     }else if (data[i].equals("Advertisement")) {
 
